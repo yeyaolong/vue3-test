@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <setup p1="aaaa"></setup>   -->
+    <!-- <ref-test></ref-test> -->
+    <!-- <reactive-ref></reactive-ref> -->
+    <!-- <to-refs></to-refs> -->
+    <!-- <computed></computed> -->
+    <watch-01></watch-01>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Setup from './components/01setup';
+import RefTest from './components/02ref';
+import reactiveRef from './components/02.1reactiveRef.vue';
+import ToRefs from './components/03toRefs';
+import Computed from './components/04computed';
+import Watch01 from './components/05watch-01';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Setup,
+    RefTest,
+    reactiveRef,
+    ToRefs,
+    Computed,
+    'watch-01': Watch01
   }
 }
 </script>
