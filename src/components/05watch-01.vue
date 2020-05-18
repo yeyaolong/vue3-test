@@ -22,16 +22,19 @@ export default {
         // 默认初始化会先执行一次watch 这里监听的数据源取决于,回调函数里写的是什么，比如，回调函数里写的时refCount,那这个watchEffect监听的就是refCount
         watchEffect((a, b, c, d) => {
             console.log(refCount.value, a, b, c ,d)
-        }, {
-            flush: 'pre',   // pre 组件更新前触发 post(默认) 组件更新后触发 sync 与组件更新同步触发
-            onTrack(event) {
-                console.log('触发OnTrack',event);
-            },
-            onTrigger(event) {
-                console.log('触发onTrigger', event);
-            }
-            // lazy: false  // 奇怪，我看这个composition-api的源代码用的是lazy，好像也没法阻止第一次立刻就执行
-        })
+        }, 
+        // composition-api 中没有以下配置，可能是composition-api没有跟上vue3的进度所致.在直接使用vue3时，以下代码可以政策执行.
+        // {
+        //     flush: 'pre',   // pre 组件更新前触发 post(默认) 组件更新后触发 sync 与组件更新同步触发
+        //     onTrack(event) {
+        //         console.log('触发OnTrack',event);
+        //     },
+        //     onTrigger(event) {
+        //         console.log('触发onTrigger', event);
+        //     }
+        //     // lazy: false  // 奇怪，我看这个composition-api的源代码用的是lazy，好像也没法阻止第一次立刻就执行
+        // }
+        )
 
         return {
             refCount,
