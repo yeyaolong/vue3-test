@@ -6,6 +6,7 @@
     <!-- <to-refs></to-refs> -->
     <!-- <computed></computed> -->
     <watch-01></watch-01>
+    <!-- <watch-02></watch-02> -->
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import reactiveRef from './components/02.1reactiveRef.vue';
 import ToRefs from './components/03toRefs';
 import Computed from './components/04computed';
 import Watch01 from './components/05watch-01';
+import Watch02 from './components/05Watch-02';
 export default {
   name: 'App',
   components: {
@@ -24,7 +26,8 @@ export default {
     reactiveRef,
     ToRefs,
     Computed,
-    'watch-01': Watch01
+    'watch-01': Watch01,
+    'watch-02': Watch02
   }
 }
 </script>

@@ -14,6 +14,8 @@ export default {
             count
         })
 
+        console.log('state', state);
+
         // console.log(state.count);
         state.count++;  // 此处不需要通过 .value 就能直接访问原始值
         // console.log(count);
