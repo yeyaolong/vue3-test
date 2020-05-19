@@ -8,6 +8,8 @@
     <!-- <computed></computed> -->
     <!-- <watch-01></watch-01> -->
     <!-- <watch-02></watch-02> -->
+    <!-- <watch-03></watch-03> -->
+    <watch-03_02></watch-03_02>
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import ToRefs from './components/03toRefs';
 import Computed from './components/04computed';
 import Watch01 from './components/05watch-01';
 import Watch02 from './components/05Watch-02';
+import Watch03 from './components/05Watch-03';
+import Watch03_02 from './components/05Watch-03_2';
 export default {
   name: 'App',
   components: {
@@ -30,7 +34,9 @@ export default {
     ToRefs,
     Computed,
     'watch-01': Watch01,
-    'watch-02': Watch02
+    'watch-02': Watch02,
+    'watch-03': Watch03,
+    'watch-03_02': Watch03_02
   }
 }
 </script>
