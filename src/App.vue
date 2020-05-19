@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <!-- <setup p1="aaaa"></setup>   -->
+    <setup-2></setup-2>
     <!-- <ref-test></ref-test> -->
     <!-- <reactive-ref></reactive-ref> -->
     <!-- <to-refs></to-refs> -->
     <!-- <computed></computed> -->
-    <watch-01></watch-01>
+    <!-- <watch-01></watch-01> -->
     <!-- <watch-02></watch-02> -->
   </div>
 </template>
 
 <script>
 import Setup from './components/01setup';
+import Setup2 from './components/01setup_2';
 import RefTest from './components/02ref';
 import reactiveRef from './components/02.1reactiveRef.vue';
 import ToRefs from './components/03toRefs';
@@ -21,6 +23,7 @@ import Watch02 from './components/05Watch-02';
 export default {
   name: 'App',
   components: {
+    'setup-2': Setup2,
     Setup,
     RefTest,
     reactiveRef,
